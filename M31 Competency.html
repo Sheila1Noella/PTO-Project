@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: orange;
+			margin-top: 150px;
+			margin-left: 250px;
+			margin-right: 150px;
+		}
+		fieldset{
+			border:10px solid pink;
+			background-color: white;
+		}
+		input[type=text]{
+			width:500px;
+			height:40px;
+			font-size: 37px;
+			margin:40px;
+		}
+		legend{
+			font-size: 35px;
+		}
+		input:focus{
+			font-size: 39px;
+			font-family: helvetica, arial;
+		}
+		button{
+			font-size: 36px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+	function display() {
+		var a = Number(document.getElementById("n").value);
+		var b = Number(document.getElementById("m").value);
+		var text;
+		if (isNaN(a)||a==""){
+			text="this field is empty";
+			document.getElementById("n").focus();
+		}
+		else if(isNaN(b)||b==""){
+			text="this field is empty";
+			document.getElementById("m").focus();
+		}
+		else{
+			var i;
+			for (var i = a; i <= b; i++) {
+				if(i%2==0){
+					if(i%3 ==0&&i%2==0){
+						continue;
+					}
+					document.write("<font size='30'>"+i+" "+"</font>");
+				}
+			}
+		}
+		document.getElementById("k").innerHTML = i;
+
+	}
+</script>
+<h1 id="k"></h1>
+<form ><fieldset><legend><b><i>competency check</i></b></legend>
+
+ first number<input type="text" name="number" id="n" ><br><br>
+ second number<input type="text" name="number" id="m" ><br><br>
+
+
+	
+	<button type="button" onclick="display();">Display</button>
+	</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+
+	body
+	{
+		margin-left: 250px;
+		margin-right: 100px;
+		
+		}
+	h1
+	{
+		background-color: white;
+	}
+	fieldset
+	{
+		border:10px solid pink;
+		background-color: white;
+	}
+	input
+	{
+		width:500px;
+		height: 40px;
+		font-size: 37px;
+		margin: 10px;
+	}
+	legend
+	{
+		font-size: 35px;
+
+	}
+	input:focus
+	{
+		background-color: red;
+	}
+	td
+	{
+		font-size: 39px;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	button
+	{
+		font-size: 36px;
+	}
+</style>
+
+</head>
+<body>
+	<script type="text/javascript">
+		function sawe() {
+			var n = document.getElementById('a').value;
+			var m = document.getElementById('b').value;
+			var o = document.getElementById('c').value;
+			var p = document.getElementById('d').value;
+						
+			var text;
+			if(n == "")
+			{
+				text = "This field is empty, fill it and continue";
+				document.getElementById("a").focus();
+			}
+			else if (m=="")
+			{
+				text = "This field is empty, fill it and continue";
+				document.getElementById("b").focus();
+			}
+			else if (o=="")
+			{
+				text = "This field is empty, fill it and continue";
+				document.getElementById("c").focus();
+			}
+			else if (p=="")
+			{
+				text = "This field is empty, fill it and continue";
+				document.getElementById("d").focus();
+			}
+			else
+			{
+				var ar = [n,m,o,p];
+				 ar.sort();
+				 document.write("<h1>" + ar + "</h1>");
+				 ar.reverse();
+				 document.write("<h1>" + ar + "</h1>")
+			}
+			document.getElementById("T").innerHTML=text;
+		}
+</script>
+	<h1 id="T"></h1>
+	
+<form><fieldset> <legend><b><i>Enter Names of Information Systems Instructors</i></b></legend>
+	<table>
+		<tr><td>First Name</td><td><input type="text" name="n1" id="a"></td></tr>
+		<tr><td>LastName</td><td><input type="text" name="n2" id="b"></td></tr>
+		<tr><td>email</td><td><input type="email" name="n3" id="c"></td></tr>
+		<tr><td>Location</td><td><input type="text" name="n4" id="d"></td></tr>
+		 <tr><td></td><td><button type="button" onclick="sawe();">Show</button></td></tr>
+
+	</table>
+	</fieldset>
+</form>
+</body>
+</html>

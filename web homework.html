@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a{text-decoration:none;
+display:inline;
+font-size:30px;
+}
+li{display:inline;
+margin-left:30px;
+}
+img{margin:10px;
+width:200px;
+height:150px;}
+</style>
+</head>
+<body>
+<script>
+function clickk()
+{
+var q = document.getElementById('w').value;
+var e = document.getElementById('x').value;
+var b = new Date();
+document.write('<h1>'+'These are the information you entered'+'<h1>')
+document.write('<h2>'+'Your names are '+q+' and '+e+'</h2>');
+document.write('<h2>'+b+'</h2>');
+}
+</script>
+<div>
+<div style="background-color:#e6b800;width:1150px;height:50px;clear:left">
+<ul type="none">
+<li><a href='#Home'>Home</a></li>
+<li><a href='#News'>News</a></li>
+<li><a href='#Technology'>Technology</a></li>
+<li><a href='#Sports'>Sports</a></li>
+<li><a href='#Country'>country</a></li>
+<li><a href='#Video'>Video</a></li>
+<li><a href='#Downloads'>Downloads</a></li></ul>
+</div>
+<div style="width:600px;height:550px;background-color:wheat;float:left;margin-top:10px;padding:10px">
+<h1 style='font-size:30px;font-family:arial;margin:10px'>Connect with friends and the</h1>
+<h1 style='font-size:30px;font-family:arial;margin:10px'>Word Around you on my Website</h1>
+<p><img src='Phone.jpg'></img><img src='People.jpg'></img></p>
+<h1 style='margin-top:180px'>
+<input type='text' name='username' placeholder='username' style='width:230px;height:35px;font-size:20px'>
+<input type='password' name='password' placeholder='password' style='width:230px;height:35px;font-size:20px'></h1>
+<input type='submit' value='Login'>
+</div>
+<div style="width:500px;height:500px;float:left;margin-left:40px">
+<form onsubmit='clickk();'><h3>
+<p>Are you interested to visit my website?</p>
+<h2 style="color:navy">Create Account Here</h2>
+<p>It's free and always will be</p>
+<p>
+<input type='text' name='firstname' placeholder='firstname' id='w'>
+<input type='text' name='lastname' placeholder='lastname' id='x'>
+</p>
+<p><input type='email' name='email' placeholder='email or phone number' id='l'></p>
+<p><input type='password' name='password' placeholder='New password' id='N'></p>
+<p><input type="radio" name="gender">Female<input type="radio"name="gender">Male</p>
+<h3 style='color:navy'>Birthday</h3>
+<select>
+<option value='december'>December
+<option value='November'>November
+<option value='October'>October
+<option value='September'>September
+<option value='August'>August
+<option value='July'>July
+<option value='June'>June
+<option value='May'>May
+<option value='April'>April
+<option value='March'>March
+<option value='February'>February
+<option value='January'>January</select>
+<select>date
+<option value='1'>1
+<option value='2'>2
+<option value='3'>3
+<option value='4'>4
+<option value='5'>5
+<option value='6'>6
+<option value='7'>7
+<option value='8'>8
+<option value='9'>9
+<option value='10'>10
+<option value='11'>11
+<option value='12'>12
+<option value='13'>13
+<option value='14'>14
+<option value='15'>15
+<option value='16'>16
+<option value='17'>17
+<option value='18'>18
+<option value='19'>19
+<option value='20'>20
+<option value='21'>21
+<option value='22'>22
+<option value='23'>23
+<option value='24'>24
+<option value='25'>25
+<option value='26'>26
+<option value='27'>27
+<option value='28'>28
+<option value='29'>29
+<option value='30'>30
+<option value='31'>31
+</select><select>Year
+<option value='1'>1999
+<option value='2'>2000
+<option value='3'>2001
+<option value='4'>2002
+<option value='5'>2003
+<option value='6'>2004
+<option value='7'>2005
+<option value='8'>2006
+<option value='9'>2007</select>
+<br></br>
+<br><input type="file" name="file to upload"></br>
+<br><input type="submit" value='sign up'></br>
+<br></br>
+By clicking create account you agree to <font style='background-color:yellow'>learn</font> and <font style='background-color:yellow'>candidate</font> then you have read 
+<font style='background-color:yellow'>data policy</font> including <font style='background-color:yellow'>cookies</font> you may receive sms candidate form this website and you can right cost any of these
+</div>
+</form>
+</div>
+</body>
+</html>

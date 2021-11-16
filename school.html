@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function interest()
+{
+var P= Number(document.getElementById('s').value);
+var r= Number(document.getElementById('h').value);
+var t= Number(document.getElementById('t').value);
+var z= document.getElementById('n').value;
+var o=z.toUpperCase();
+var A=((P*r*t)/100)+P;
+document.write('<h1>' + 'The simple interest is '+ A + '</h1>');
+document.write('<h1>' + 'The customer name is ' + o + '</h1>');
+document.write('<h1>' + 'when I put in fixed '+ A.toFixed(2)+ '</h1>');
+}
+</script>
+</head>
+<body style='background-color:wheat'>
+<form onsubmit='interest();'>
+<p>Customer name<input type='text' name='name' id='n'></p>
+<p>Customer credit(p)<input type='text' name='number' id='s'></p>
+<p>Annual rate(r)<input type='text' name='number' id='h'></p>
+<p>year(t)<input type='text' name='number' id='t'></p>
+<p><input type='submit' value='submit' id='k'></p>
+</form>
+</body>
+</html>
